@@ -4,8 +4,8 @@ const nextConfig: NextConfig = {
   /* config options here */
   // distDir: 'build',
   output: 'export',
-  // basePath: '/TIP',
-  // assetPrefix: '/TIP/',
+  basePath: '/TIP',
+  assetPrefix: '/TIP/',
   trailingSlash: true,
   images:{
     unoptimized:true

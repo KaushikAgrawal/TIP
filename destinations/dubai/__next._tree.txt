@@ -2,4 +2,4 @@
 :HL["/TIP/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&g=80","image"]
 :HL["https://images.unsplash.com/photo-1512453979798-5₴ª266f8880€7w=800&g=80","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"destinations","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"dubai","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"RQOXNARSbYBWy9y1entlI"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"destinations","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"dubai","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"fUDrFYHYeFQN8nYFG4_Zc"}

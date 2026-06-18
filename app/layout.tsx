@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar";
-// import Footer from "@/components/footer";
+import Footer from "@/components/footer";
 import { AuthProvider } from "@/contexts/auth-context";
 
 const inter = Inter({
@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Travel In Pocket",
+  title: "Vacation In Pocket",
   description: "Most Trusted Travel Company",
 };
 
@@ -29,7 +29,7 @@ export default function RootLayout({
         <AuthProvider>
           <Navbar />
           <main className="flex-grow">{children}</main>
-          {/* <Footer /> */}
+          <Footer />
         </AuthProvider>
         </body>
     </html>

@@ -12,16 +12,17 @@ export const destinations: Destination[] = [
         popular: true
     },
     {
-        id: "3",
+        id: "2",
         slug: "dubai",
         name: "Dubai",
         country: "UAE",
-        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&g=80", tourCount: 2,
+        image: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&g=80", 
+        tourCount: 2,
         description: "Modern luxury meets Arabian heritage",
         popular: true
     },
     {
-        id: "4",
+        id: "3",
         slug: "maldives",
         name: "Maldives",
         country: "Maldives",
@@ -74,7 +75,7 @@ export const tours: Tour[] = [
         ]
     },
     {
-        id: "3",
+        id: "2",
         slug: "dubai-abu-dhabi-luxury-honeymoon-escape",
         title: "Dubai & Abu Dhabi Luxury Honeymoon Escape",
         destination: "Dubai",
@@ -101,7 +102,7 @@ export const tours: Tour[] = [
         trustBadges: ["Luxury Hotels", "private Transfers", "Visa Assistance"]
     },
     {
-        id: "4",
+        id: "3",
         slug: "maldives-paradise-retreat-overwater-villa-experience",
         title: "Maldives Paradise Retreat | Overwater Villa Experience",
         destination: "Maldives",

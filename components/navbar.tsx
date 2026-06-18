@@ -26,19 +26,19 @@ export default function Navbar() {
                     <div className="flex items-center">
                         < Link href="/" className="flex items-center space-x-2">
                             <div className="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                                <span className="text-white font-bold text-xl">TIP</span>
+                                <span className="text-white font-bold text-xl">VIP</span>
                             </div>
                             <span className="text-xl font-bold text-gray-900 hidden sm:block">
-                                Travel In Pocket </ span>
+                                Vacation In Pocket </ span>
                         </Link>
                     </div>
                     <div className="hidden md:flex items-center space-x-8">
                         < Link href="/destinations" className="text-gray-700 hover:text-blue-600 transition">
                             Destinations
                         </Link>
-                        {/* < Link href="/tours" className="text-gray-700 hover:text-blue-600 transition">
+                        < Link href="/tours" className="text-gray-700 hover:text-blue-600 transition">
                             Tours
-                        </Link> */}
+                        </Link>
                         <Link href="/activities" className="text-gray-700 hover:text-blue-600 transition">
                             Activities
                         </Link>

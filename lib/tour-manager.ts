@@ -9,18 +9,18 @@ export class TourManager {
         return this.tours
     }
     static getTourById(id: string): Tour | undefined {
-        return this.tours.find(tour => tour.id == id)
+        return this.tours.find(tour => tour.id === id)
     }
     static getTourBySlug(slug: string): Tour | undefined {
-        return this.tours.find(tour => tour.slug == slug)
+        return this.tours.find(tour => tour.slug === slug)
     }
 
     static getToursByDestination(destinationName: string): Tour[] {
         return this.tours.filter(tour => tour.destination.toLowerCase() === destinationName.toLowerCase())
     }
     static getToursByCategory(category: string): Tour[] {
-        if (category == "All") return this.tours
-        return this.tours.filter(tour => tour.category == category)
+        if (category === "All") return this.tours
+        return this.tours.filter(tour => tour.category === category)
     }
     static searchTours(query: string): Tour[] {
         const searchLower = query.toLowerCase()
@@ -43,12 +43,12 @@ export class TourManager {
         if (params.search) {
             filtered = this.searchTours(params.search)
         }
-        if (params.category && params.category != "All") {
+        if (params.category && params.category !== "All") {
             filtered = filtered.filter(tour => tour.category === params.category)
         }
         if (params.destination) {
             filtered = filtered.filter(tour =>
-                tour.destination.toLowerCase() == params.destination?.toLowerCase())
+                tour.destination.toLowerCase() === params.destination?.toLowerCase())
         }
 
         if (params.minPrice != undefined) {
@@ -58,7 +58,7 @@ export class TourManager {
             filtered = filtered.filter(tour => tour.price <= params.maxPrice!)
         }
         if (params.minRating != undefined) {
-            filtered = filtered.filter(tour => tour.rating > params.minRating!)
+            filtered = filtered.filter(tour => tour.rating >= params.minRating!)
         }
         return filtered
     }
@@ -73,10 +73,10 @@ export class TourManager {
         return this.destinations
     }
     static getDestinationById(id: string): Destination | undefined {
-        return this.destinations.find(dest => dest.id == id)
+        return this.destinations.find(dest => dest.id === id)
     }
     static getDestinationBySlug(slug: string): Destination | undefined {
-        return this.destinations.find(dest => dest.slug == slug)
+        return this.destinations.find(dest => dest.slug === slug)
     }
     static getDestinationByName(name: string): Destination | undefined {
         return this.destinations.find(dest => dest.name.toLowerCase() === name.toLowerCase())
@@ -85,8 +85,8 @@ export class TourManager {
         this.tours.push(tour)
     }
     static updateTour(id: string, updates: Partial<Tour>): boolean {
-        const index = this.tours.findIndex(tour => tour.id == id)
-        if (index == -1) return false
+        const index = this.tours.findIndex(tour => tour.id === id)
+        if (index === -1) return false
         this.tours[index] = { ...this.tours[index], ...updates }
         return true
     }
@@ -115,7 +115,7 @@ export class TourManager {
         if (!tour || !tour.itinerary)
             return false
         const dayIndex = tour.itinerary.findIndex(d => d.day = dayNumber)
-        if (dayIndex == -1)
+        if (dayIndex === -1)
             return false
         tour.itinerary[dayIndex] = { ...tour.itinerary[dayIndex], ...updates }
         return true

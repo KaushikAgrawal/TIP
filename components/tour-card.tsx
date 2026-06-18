@@ -34,7 +34,7 @@ export default function TourCard({ tour }: TourCardProps) {
                     <div className="flex items-center">
                         <Star className="h-4 w-4 mr-1 fill-yellow-400 text-yellow-400" />
                         <span className="font-semibold">{tour.rating}</span>
-                        <span className="ml-1">{tour.reviews}</span>
+                        <span className="ml-1">({tour.reviews})</span>
                     </div>
                 </div>
                 <div className="border-t pt-3">
@@ -46,7 +46,7 @@ export default function TourCard({ tour }: TourCardProps) {
                             </p>
                             <p className="text-xs text-gray-500">per person</p>
                         </div>
-                        <Link href={`/tours/${tour.slug}`}>
+                         <Link href={`/tours/${tour.slug}`}>
                             <Button>View Details & Inquire</Button>
                         </Link>
                     </div>

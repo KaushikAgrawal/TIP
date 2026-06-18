@@ -5,7 +5,10 @@ const nextConfig: NextConfig = {
   distDir: 'build',
   output: 'export',
   basePath: '/TIP',
-  assetPrefix: '/TIP/'
+  assetPrefix: '/TIP/',
+  images:{
+    unoptimized:true
+  }
 };
 
 export default nextConfig;

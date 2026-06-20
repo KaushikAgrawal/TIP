@@ -1,33 +1,12 @@
 // WhatsApp Business API Integration
 // Your WhatsApp Business number (with country code, no * or spaces)
 // Example: For +91 9876543210, use "919876543210"
-export const WHATSAPP_NUMBER = "919876543210" // Replace with your actual number:
+export const WHATSAPP_NUMBER = "+918826609209" // Replace with your actual number:
 /**
 * Format inquiry data, for WhatsApp message
 */
-export function formatInquiryMessage(data: {
-    name: string
-    email: string
-    phone: string
-    tourName: string
-    travelDate?: string
-    guests?: number
-    message?: string
-}): string {
-    let message = `*New Tour Inquiry*\n\n`
-    message += `*Tour:* ${data.tourName}\n\n`
-    message += `*Name:* ${data.name}\n`
-    message += `*Email:* ${data.email}\n`
-    message += `*Phone:* ${data.phone}\n`
-    if (data.travelDate) {
-        message += `*Travel Date:* ${data.travelDate}\n`
-    }
-    if (data.guests) {
-        message += `*Guests:* ${data.guests}\n`
-    }
-    if (data.message) {
-        message += `*Message:* ${data.message}\n`
-    }
+export function chatOnMessage(): string {
+    let message = `*Hi Vacation In Pocket! I would like to inquire for a tour*\n\n`
     return encodeURIComponent(message)
 }
 
@@ -66,16 +45,8 @@ export function sendToWhatsApp(message: string, phoneNumber: string = WHATSAPP_N
 /** 
     * Send inquiry to WhatsApp
 */
-export function sendInquiryToWhatsApp(data: {
-    name: string
-    email: string
-    phone: string
-    tourName: string
-    travelDate?: string
-    guests?: number
-    message?: string
-}): void {
-    const message = formatInquiryMessage(data)
+export function sendChatInquiryToWhatsApp(): void {
+    const message = chatOnMessage()
     sendToWhatsApp(message)
 }
 /** 

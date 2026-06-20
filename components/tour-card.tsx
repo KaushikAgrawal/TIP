@@ -21,7 +21,7 @@ export default function TourCard({ tour }: TourCardProps) {
                 </div>
             </div>
             <CardContent className="p-4">
-                <Link href={`/tours/${tour.id}`}>
+                <Link href={`/tours/${tour.slug}`}>
                     <h3 className="text-lg font-bold text-gray-900 mb-2 hover: text-blue-600 transition line-clamp-2">
                         {tour.title}
                     </h3>

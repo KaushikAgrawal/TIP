@@ -1,4 +1,4 @@
 :HL["/TIP/_next/static/chunks/0v-5yixc-xrrq.css","style"]
 :HL["/TIP/_next/static/media/83afe278b6a6bb3c-s.p.0q-301v4kxxnr.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
 :HL["https://images.unsplash.com/photo-1577717903315-1691ae25ab3f?g=80&w=800","image"]
-0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"destinations","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"bali","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"-nurWXTA-dRrEcfopHzds"}
+0:{"tree":{"name":"","param":null,"prefetchHints":16,"slots":{"children":{"name":"destinations","param":null,"prefetchHints":0,"slots":{"children":{"name":"id","param":{"type":"d","key":"bali","siblings":null},"prefetchHints":0,"slots":{"children":{"name":"__PAGE__","param":null,"prefetchHints":0,"slots":null}}}}}}},"staleTime":300,"buildId":"_3gNzLHpp6KAs2UVK7ZUG"}
